@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form">
+            <div class="input-group">
+                <input type="text" placeholder="Enter full name" id="contact-name" onkeyup="validateName()">
+                <span id="name-error"></span>
+            </div>
+            <br>
+            <div class="input-group">
+                <input type="tel" placeholder="Enter phone number" id="contact-phone" onkeyup="validatePhone()">
+                <span id="phone-error"></span>
+            </div>
+            <br>
+            <div class="input-group">
+                <input type="email" placeholder="Enter email" id="contact-email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
+            </div>
+            <br>
+            <div class="input-group">
+                <label for="text">Your Message</label>
+                <textarea id="contact-message" onkeyup="validateMessage()"></textarea>
+                <span id="message-error"></span>
+            </div>
+            <button onclick="return validateForm()">Submit</button>
+            <span id="submit-error"></span>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="validate.js"></script>
+</body>
+
+</html>
